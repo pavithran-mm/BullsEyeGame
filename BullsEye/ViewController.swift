@@ -32,7 +32,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startNewRound()
-        
         let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
         slider.setThumbImage(thumbImageNormal, for: .normal)
         
@@ -51,29 +50,13 @@ class ViewController: UIViewController {
     
 
     @IBAction func hitMe(){
+        let pointsTuple : (points: Int, difference: Int) = calculatePointsDifference()
+        var points: Int = pointsTuple.0
+        let difference: Int = pointsTuple.1
         
-        let difference : Int = abs(randomValue - currentSliderValue)
-        var points  = 100 - difference
-        var title: String
-        
-        
-        switch(difference){
-        case 0:
-            points += 100
-            title = "Perfect!!!"
-        
-        case 1:
-            points += 50
-            title = "Aaahh!! Missed that!!"
-        
-        case 2...5:
-            points += 25
-            title = "Almost there!"
-        
-        default :
-            title = "Needs more precision"
-        
-        }
+        let titleAndBonus = getBonusAndTitle(difference)
+        let title: String = titleAndBonus.0
+        points += titleAndBonus.1
         
         score += points
         let alert = UIAlertController(title: title, message: "You scored \(points)", preferredStyle: .alert)
@@ -111,5 +94,34 @@ class ViewController: UIViewController {
         scoreLabel.text = String(score)
         roundLabel.text = String(round)
     }
+    
+    func calculatePointsDifference() -> (points: Int, difference: Int) {
+        let difference : Int = abs(randomValue - currentSliderValue)
+        let points  = 100 - difference
+        return (points, difference)
+    }
+    
+    func getBonusAndTitle(_ difference : Int) -> (title: String, points: Int){
+        var points : Int = 0
+        var title :String = "Try Again"
+        switch(difference){
+        case 0:
+            points += 100
+            title = "Perfect!!!"
+        
+        case 1:
+            points += 50
+            title = "Aaahh!! Missed that!!"
+        
+        case 2...5:
+            points += 25
+            title = "Almost there!"
+        
+        default :
+            title = "Needs more precision"
+        
+        }
+        return (title, points)
+    } 
 }
 
