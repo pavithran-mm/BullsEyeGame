@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		9863227D28C860B80000336D /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9863227C28C860B80000336D /* BullsEyeTests.swift */; };
+		986322BC28C8BED50000336D /* BullsEyeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986322BB28C8BED50000336D /* BullsEyeGame.swift */; };
+		986322BE28C8BF750000336D /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986322BD28C8BF750000336D /* GameController.swift */; };
 		98A7410C28C24576002920BE /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A7410B28C24576002920BE /* AboutViewController.swift */; };
 		98A7410E28C44F4A002920BE /* AboutAuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A7410D28C44F4A002920BE /* AboutAuthorViewController.swift */; };
 		98A7411128C46889002920BE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A7411028C46889002920BE /* WebKit.framework */; };
 		98A7411328C468AC002920BE /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 98A7411228C468AC002920BE /* BullsEye.html */; };
 		98DA756728C2031D00263C73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA756628C2031D00263C73 /* AppDelegate.swift */; };
 		98DA756928C2031D00263C73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA756828C2031D00263C73 /* SceneDelegate.swift */; };
-		98DA756B28C2031D00263C73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA756A28C2031D00263C73 /* ViewController.swift */; };
+		98DA756B28C2031D00263C73 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DA756A28C2031D00263C73 /* GameViewController.swift */; };
 		98DA756E28C2031D00263C73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DA756C28C2031D00263C73 /* Main.storyboard */; };
 		98DA757028C2031D00263C73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DA756F28C2031D00263C73 /* Assets.xcassets */; };
 		98DA757328C2031D00263C73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DA757128C2031D00263C73 /* LaunchScreen.storyboard */; };
@@ -34,6 +36,8 @@
 		9863226F28C8608B0000336D /* BullsEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeTests.swift; sourceTree = "<group>"; };
 		9863227A28C860B80000336D /* BullsEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9863227C28C860B80000336D /* BullsEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeTests.swift; sourceTree = "<group>"; };
+		986322BB28C8BED50000336D /* BullsEyeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeGame.swift; sourceTree = "<group>"; };
+		986322BD28C8BF750000336D /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		98A7410B28C24576002920BE /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		98A7410D28C44F4A002920BE /* AboutAuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAuthorViewController.swift; sourceTree = "<group>"; };
 		98A7411028C46889002920BE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -41,7 +45,7 @@
 		98DA756328C2031D00263C73 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DA756628C2031D00263C73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98DA756828C2031D00263C73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98DA756A28C2031D00263C73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98DA756A28C2031D00263C73 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		98DA756D28C2031D00263C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98DA756F28C2031D00263C73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98DA757228C2031D00263C73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +87,32 @@
 			path = BullsEyeTests;
 			sourceTree = "<group>";
 		};
+		986322C028C8F1320000336D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				986322BD28C8BF750000336D /* GameController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		986322C128C8F14A0000336D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				986322BB28C8BED50000336D /* BullsEyeGame.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		986322C228C8F1530000336D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98DA756A28C2031D00263C73 /* GameViewController.swift */,
+				98A7410B28C24576002920BE /* AboutViewController.swift */,
+				98A7410D28C44F4A002920BE /* AboutAuthorViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		98A7410F28C46889002920BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,12 +144,12 @@
 		98DA756528C2031D00263C73 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				986322C228C8F1530000336D /* Views */,
+				986322C128C8F14A0000336D /* Models */,
+				986322C028C8F1320000336D /* Controllers */,
 				98DA756628C2031D00263C73 /* AppDelegate.swift */,
 				98DA756828C2031D00263C73 /* SceneDelegate.swift */,
-				98DA756A28C2031D00263C73 /* ViewController.swift */,
-				98A7410B28C24576002920BE /* AboutViewController.swift */,
 				98DA756C28C2031D00263C73 /* Main.storyboard */,
-				98A7410D28C44F4A002920BE /* AboutAuthorViewController.swift */,
 				98DA756F28C2031D00263C73 /* Assets.xcassets */,
 				98DA757128C2031D00263C73 /* LaunchScreen.storyboard */,
 				98DA757428C2031D00263C73 /* Info.plist */,
@@ -238,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DA756B28C2031D00263C73 /* ViewController.swift in Sources */,
+				98DA756B28C2031D00263C73 /* GameViewController.swift in Sources */,
+				986322BC28C8BED50000336D /* BullsEyeGame.swift in Sources */,
 				98DA756728C2031D00263C73 /* AppDelegate.swift in Sources */,
 				98A7410C28C24576002920BE /* AboutViewController.swift in Sources */,
 				98DA756928C2031D00263C73 /* SceneDelegate.swift in Sources */,
+				986322BE28C8BF750000336D /* GameController.swift in Sources */,
 				98A7410E28C44F4A002920BE /* AboutAuthorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

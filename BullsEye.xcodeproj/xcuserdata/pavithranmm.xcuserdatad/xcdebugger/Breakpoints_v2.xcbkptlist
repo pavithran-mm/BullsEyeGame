@@ -20,5 +20,211 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E1839B5-48E6-424E-A57E-AB6A343E49B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEye/GameController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "updateScore()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5C36E91-A965-4DD1-9651-5D03C2C4BD9D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEyeTests/BullsEyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testWhenStartNewGameIsCalledThenRoundShouldBeOneAndScoreShouldBeZero()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F5C36E91-A965-4DD1-9651-5D03C2C4BD9D - 16624c5b44c936d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullsEyeTests.BullsEyeTests.testWhenStartNewGameIsCalledThenRoundShouldBeOneAndScoreShouldBeZero() -&gt; ()"
+                  moduleName = "BullsEyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavithranmm/Projects/Swift/BullsEye/BullsEyeTests/BullsEyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "360">
+               </Location>
+               <Location
+                  uuid = "F5C36E91-A965-4DD1-9651-5D03C2C4BD9D - 16624c5b44c936d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullsEyeTests.BullsEyeTests.testWhenStartNewGameIsCalledThenRoundShouldBeOneAndScoreShouldBeZero() -&gt; ()"
+                  moduleName = "BullsEyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavithranmm/Projects/Swift/BullsEye/BullsEyeTests/BullsEyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "F5C36E91-A965-4DD1-9651-5D03C2C4BD9D - 16624c5b44c936d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullsEyeTests.BullsEyeTests.testWhenStartNewGameIsCalledThenRoundShouldBeOneAndScoreShouldBeZero() -&gt; ()"
+                  moduleName = "BullsEyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavithranmm/Projects/Swift/BullsEye/BullsEyeTests/BullsEyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "368">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE365D6F-7D4B-42FC-99DA-04ED44C42F8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEyeTests/BullsEyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "testScoreShouldUpdateWhenWeUpdateTheSliderValueEqualToTheTargetValueAndScoreShouldBeTwoHundred()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE365D6F-7D4B-42FC-99DA-04ED44C42F8A - b3a0f2bd8bcef4b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullsEyeTests.BullsEyeTests.testScoreShouldUpdateWhenWeUpdateTheSliderValue() -&gt; ()"
+                  moduleName = "BullsEyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavithranmm/Projects/Swift/BullsEye/BullsEyeTests/BullsEyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "2064">
+               </Location>
+               <Location
+                  uuid = "BE365D6F-7D4B-42FC-99DA-04ED44C42F8A - b3a0f2bd8bcef4b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullsEyeTests.BullsEyeTests.testScoreShouldUpdateWhenWeUpdateTheSliderValue() -&gt; ()"
+                  moduleName = "BullsEyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavithranmm/Projects/Swift/BullsEye/BullsEyeTests/BullsEyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "2024">
+               </Location>
+               <Location
+                  uuid = "BE365D6F-7D4B-42FC-99DA-04ED44C42F8A - b3a0f2bd8bcef4b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BullsEyeTests.BullsEyeTests.testScoreShouldUpdateWhenWeUpdateTheSliderValue() -&gt; ()"
+                  moduleName = "BullsEyeTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pavithranmm/Projects/Swift/BullsEye/BullsEyeTests/BullsEyeTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "70"
+                  endingLineNumber = "70"
+                  offsetFromSymbolStart = "2016">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6D0C255-4B55-4469-8C81-11DA091DC1C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEyeTests/BullsEyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeOneTwoSix()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AAB5CAB-3133-47F9-9B64-28FDCD44EA4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEyeTests/BullsEyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeOneTwoSix()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E148D56D-8000-4632-BE07-506457469C55"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEyeTests/BullsEyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "BullsEyeTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "768C589E-9578-49AA-9538-AE7691D3851E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BullsEyeTests/BullsEyeTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeOneTwoSix()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
