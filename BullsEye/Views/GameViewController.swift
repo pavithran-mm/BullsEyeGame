@@ -38,16 +38,10 @@ class GameViewController: UIViewController {
     @IBAction func hitMe(){
         let (title, message) = gameController.updateScore()
         
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "Awesome", style: .default, handler: { [self]
-            action in
-            self.gameController.startNewRound()
-            updateLabelsAndSlider()
-        })
-        
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
+        self.showAlert(title: title, message: message){
+                self.gameController.startNewRound()
+                self.updateLabelsAndSlider()
+        }
         
     }
 
@@ -83,6 +77,15 @@ class GameViewController: UIViewController {
         targetLabel.text = String(labelValues[.target]!)
         scoreLabel.text = String(labelValues[.score]!)
         roundLabel.text = String(labelValues[.round]!)
+    }
+    
+    private func showAlert(title: String, message: String, onClickHandler: @escaping () -> Void) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Awesome", style: .default, handler: {(UIAlertAction) -> Void in onClickHandler()})
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
     }
     
     
