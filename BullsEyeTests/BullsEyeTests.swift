@@ -27,8 +27,8 @@ class BullsEyeTests: XCTestCase {
     
     func testWhenStartNewGameIsCalledThenRoundShouldBeOneAndScoreShouldBeZero(){
         let initalValues = sut.getLabelValues()
-        let round = initalValues["round"]!
-        let score = initalValues["score"]!
+        let round = initalValues[.round]!
+        let score = initalValues[.score]!
         let expectedRound = 1
         let expectedScore = 0
         
@@ -39,28 +39,28 @@ class BullsEyeTests: XCTestCase {
     
     func testWhenStartNewRoundIsCalledThenRoundShouldBeTwo(){
         let initalValues = sut.getLabelValues()
-        let round = initalValues["round"]!
+        let round = initalValues[.round]!
         let expectedRound = 2
             
         sut.startNewRound()
         
-        let roundResult = sut.getLabelValues()["round"]
+        let roundResult = sut.getLabelValues()[.round]
         XCTAssertTrue(round != roundResult)
         XCTAssertEqual(roundResult, expectedRound)
     }
     
     func testScoreShouldUpdateWhenWeUpdateTheSliderValueEqualToTheTargetValueAndScoreShouldBeTwoHundred(){
         let initalValue = sut.getLabelValues()
-        let round = initalValue["round"]!
-        let score = initalValue["score"]!
+        let round = initalValue[.round]!
+        let score = initalValue[.score]!
         
-        sut.updateSliderValue(sliderValue: initalValue["target"]!)
+        sut.updateSliderValue(sliderValue: initalValue[.target]!)
         let (title, message) = sut.updateScore()
         sut.startNewRound()
         
         let resultValue = sut.getLabelValues()
-        let resultRound = resultValue["round"]!
-        let resultScore = resultValue["score"]!
+        let resultRound = resultValue[.round]!
+        let resultScore = resultValue[.score]!
         XCTAssertTrue(resultRound > round)
         XCTAssertTrue(resultScore != score)
         XCTAssertEqual(title, "Perfect!")
@@ -72,16 +72,16 @@ class BullsEyeTests: XCTestCase {
     func testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeOneFourNine(){
         sut.startNewGame()
         let initalValue = sut.getLabelValues()
-        let round = initalValue["round"]!
-        let score = initalValue["score"]!
+        let round = initalValue[.round]!
+        let score = initalValue[.score]!
         
-        sut.updateSliderValue(sliderValue: initalValue["target"]! - 1)
+        sut.updateSliderValue(sliderValue: initalValue[.target]! - 1)
         let (title, message) = sut.updateScore()
         sut.startNewRound()
         
         let resultValue = sut.getLabelValues()
-        let resultRound = resultValue["round"]!
-        let resultScore = resultValue["score"]!
+        let resultRound = resultValue[.round]!
+        let resultScore = resultValue[.score]!
         XCTAssertTrue(resultRound > round)
         XCTAssertTrue(resultScore > score)
         XCTAssertEqual(title, "Aaah!! Missed that!")
@@ -93,16 +93,16 @@ class BullsEyeTests: XCTestCase {
     func testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeOneTwoSix(){
         sut.startNewGame()
         let initalValue = sut.getLabelValues()
-        let round = initalValue["round"]!
-        let score = initalValue["score"]!
+        let round = initalValue[.round]!
+        let score = initalValue[.score]!
         
-        sut.updateSliderValue(sliderValue: initalValue["target"]! - 4)
+        sut.updateSliderValue(sliderValue: initalValue[.target]! - 4)
         let (title, message) = sut.updateScore()
         sut.startNewRound()
         
         let resultValue = sut.getLabelValues()
-        let resultRound = resultValue["round"]!
-        let resultScore = resultValue["score"]!
+        let resultRound = resultValue[.round]!
+        let resultScore = resultValue[.score]!
         XCTAssertTrue(resultRound > round)
         XCTAssertTrue(resultScore != score)
         XCTAssertEqual(title, "Almost There")
@@ -113,16 +113,16 @@ class BullsEyeTests: XCTestCase {
     
     func testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeNintyFour(){
         let initalValue = sut.getLabelValues()
-        let round = initalValue["round"]!
-        let score = initalValue["score"]!
+        let round = initalValue[.round]!
+        let score = initalValue[.score]!
         
-        sut.updateSliderValue(sliderValue: initalValue["target"]! - 6)
+        sut.updateSliderValue(sliderValue: initalValue[.target]! - 6)
         let (title, message) = sut.updateScore()
         sut.startNewRound()
         
         let resultValue = sut.getLabelValues()
-        let resultRound = resultValue["round"]!
-        let resultScore = resultValue["score"]!
+        let resultRound = resultValue[.round]!
+        let resultScore = resultValue[.score]!
         XCTAssertTrue(resultRound > round)
         XCTAssertTrue(resultScore != score)
         XCTAssertEqual(title, "Out of the way")
@@ -133,16 +133,16 @@ class BullsEyeTests: XCTestCase {
     
     func testScoreShouldUpdateWhenWeUpdateTheSliderValueAndThenTheScoreShouldBeEightyNine(){
         let initalValue = sut.getLabelValues()
-        let round = initalValue["round"]!
-        let score = initalValue["score"]!
+        let round = initalValue[.round]!
+        let score = initalValue[.score]!
         
-        sut.updateSliderValue(sliderValue: initalValue["target"]! - 11)
+        sut.updateSliderValue(sliderValue: initalValue[.target]! - 11)
         let (title, message) = sut.updateScore()
         sut.startNewRound()
         
         let resultValue = sut.getLabelValues()
-        let resultRound = resultValue["round"]!
-        let resultScore = resultValue["score"]!
+        let resultRound = resultValue[.round]!
+        let resultScore = resultValue[.score]!
         XCTAssertTrue(resultRound > round)
         XCTAssertTrue(resultScore != score)
         XCTAssertEqual(title, "Needs more precision")

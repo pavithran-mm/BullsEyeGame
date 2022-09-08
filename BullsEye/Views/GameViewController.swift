@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
     
     var gameController : GameController = GameController()
     
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         gameController.startNewGame()
-        
+
         styleSlider()
         updateLabelsAndSlider()
     }
@@ -79,10 +79,10 @@ class ViewController: UIViewController {
     
     func updateLabelsAndSlider(){
         let labelValues = gameController.getLabelValues()
-        slider.value = Float(labelValues["slider"]!)
-        targetLabel.text = String(labelValues["target"]!)
-        scoreLabel.text = String(labelValues["score"]!)
-        roundLabel.text = String(labelValues["round"]!)
+        slider.value = Float(labelValues[.slider]!)
+        targetLabel.text = String(labelValues[.target]!)
+        scoreLabel.text = String(labelValues[.score]!)
+        roundLabel.text = String(labelValues[.round]!)
     }
     
     

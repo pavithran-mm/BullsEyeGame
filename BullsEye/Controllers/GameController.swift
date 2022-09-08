@@ -11,6 +11,10 @@ struct GameController{
     
     private var game : BullsEyeGame
     
+    enum LabelValues {
+        case target, score, round, slider
+    }
+    
     init(){
         self.game = BullsEyeGame()
     }
@@ -59,11 +63,11 @@ struct GameController{
         }
     }
     
-    func getLabelValues() -> [String : Int]{
-        return ["target" : game.targetValue,
-                "score" : game.score,
-                "round" : game.round,
-                "slider" : game.currentValue
+    func getLabelValues() -> [LabelValues : Int]{
+        return [.target : game.targetValue,
+                .score : game.score,
+                .round : game.round,
+                .slider : game.currentValue
         ]
     }
 }
