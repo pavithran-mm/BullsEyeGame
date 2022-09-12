@@ -42,7 +42,7 @@ struct GameController{
         
         
         switch(difference){
-        case 0:
+        case 0:  
             points += 100
             game.score += points
             return ("Perfect!" , message + String(points))
